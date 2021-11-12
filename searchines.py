@@ -10,6 +10,7 @@ import requests
 def get_slots(intent_request):
     return intent_request['currentIntent']['slots']
 def close(session_attributes, fulfillment_state, message):
+    #test
     response = {
         'sessionAttributes': session_attributes,
         'dialogAction': {
